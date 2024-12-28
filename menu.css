@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d6f4ce;
+}
+
+.navbar {
+    background-color: #034b20;
+    color: rgb(226, 21, 21);
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.navbar a {
+    color: rgb(226, 21, 21);
+    text-decoration: none; /* Remove default underline */
+    padding: 10px;
+    font-size: 18px; /* Consistent font size for links */
+}
+
+
+.navbar div:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.content {
+    text-align: center;
+    margin: 20px;
+}
+
+.content h1 {
+    font-size: 24px;
+    margin-bottom:20px;
+    color: rgb(226, 21, 21);
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.menu {
+    width: 70%;
+    margin: 0 auto;
+    padding: 80px;
+    background-color:#c2e2ba;
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.menu h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: #4d0505;
+}
+
+.menu h2 {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #5f030387;
+}
+
+.menu-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+}
+
+.menu-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.dish-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.price {
+    float: right;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #555;
+}
+
+.description {
+    font-size: 0.9em;
+    color: #666;
+    margin-left: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #ffe6cc;
+    color: #e67300;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin-left: 5px;
+}
+.footer {
+    background-color: #034b20; 
+    text-align: center;
+    padding: 20px ;
+  }
+  
+  .social-link {
+    text-decoration: none;
+    color: rgb(186, 8, 8); 
+    font-size: 1.2rem;
+    font-weight: bold;
+   
+    gap: 10px; 
+  }
+  
+  .social-icon {
+    width: 24px;
+    height: 24px;
+  }
+  /* phones */
+  @media (max-width: 576px) {
+    .navbar {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; /* Stack links vertically */
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .navbar a {
+        font-size: 16px; /* Smaller font for links */
+        padding: 8px;
+    }
+
+}
+
+/* Tablets */
+@media (min-width: 577px) and (max-width: 768px) {
+    .navbar {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+   
+}
+
+/* Desktops */
+@media (min-width: 769px) {
+    .navbar {
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+
+    
+}
