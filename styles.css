@@ -130,7 +130,7 @@ body {
     height: 24px;
   }
 /* Phones */
-@media (max-width: 576px) {
+@media (max-width: 500px) {
     .navbar {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -157,13 +157,14 @@ body {
         margin: 0 auto; /* Center images */
     }
     .gallery img {
-        width: 100px;
+        width: 130px;
+        height: 150px;
     }
 
 }
 
 /* Tablets */
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 768px) {
     .navbar {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -175,6 +176,7 @@ body {
 
     .gallery img {
         width: 150px;
+        height: 170px;
     }
 
     .carousel-caption {
