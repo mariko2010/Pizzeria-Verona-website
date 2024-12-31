@@ -36,6 +36,9 @@ body {
     font-weight: bold;
     font-family: 'Comic Sans MS', cursive;
 }
+.logo span {
+    font-family: 'Comic Sans MS', sans-serif;
+}
 
 .content {
     text-align: center;
